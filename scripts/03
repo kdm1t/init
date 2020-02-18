@@ -4,44 +4,48 @@ echo -en "\033[0;34mChoose:
 2.Unzip
 3.Watch content
 "
+
 read -n 1 ACTION
 if [[ "$ACTION" = "1" ]]
 then
 	echo "
-	What needs to be archived?"
+What needs to be archived?"
 	read DIR_NAME
 	echo "Enter archive name:"
 	read FILE_NAME
 	echo "Choose:
-	1.Gzip
-	2.Bzip2"
+1.Gzip
+2.Bzip2
+"
 	read -n 1 TYPE
 	if [[ "$TYPE" = "1" ]]
 	then
 		tar -cvzf $FILE_NAME.tar.gz $DIR_NAME
 		echo "
-		Archive was created: $FILE_NAME.tar.gz"
+Archive was created: $FILE_NAME.tar.gz"
 	fi
 	if [[ "$TYPE" = "2" ]]
 	then
 		tar -cvjf $FILE_NAME.tar.bz2 $DIR_NAME
 		echo "
-		Archive was created: $FILE_NAME.tar.bz2"
+Archive was created: $FILE_NAME.tar.bz2"
 	fi
 fi
 if [[ "$ACTION" = "2" ]]
 then
 	echo "
-	Enter archive name:"
+Enter archive name:"
 	read ARCH_NAME
 	tar -xvf $ARCH_NAME
-	echo "Archive was unzipped"
+	echo "
+Archive was unzipped"
 fi
 if [[ "$ACTION" = "3" ]]
 then
 	echo "
-	Enter archive name:"
+Enter archive name:"
 	read TOWATCH
-	echo "Archive contains:"
+	echo "
+Archive contains:"
 	tar -tf $TOWATCH
 fi
