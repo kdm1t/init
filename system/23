@@ -1,0 +1,5 @@
+1. With graphic session:
+Подключаемся при помощи команды "su username". На запрос пароля вводим тот, который использует username.
+2. ssh session:
+ssh username@ip
+Например, ssh mwilbur@127.0.0.1
