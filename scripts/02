@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Enter user to be deleted:"
+read USER
+pgrep -u $USER | while read PID; do sudo kill -9 $PID; done
+echo "All $USER proccesses were killed"
+sudo deluser $USER
+echo "User $USER has been deleted."

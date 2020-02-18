@@ -1,0 +1,29 @@
+#!/bin/bash
+echo "enter zip/unzip"
+read ACTION
+if [[ "$ACTION" = "zip" ]]
+then
+	echo "What needs to be archived?"
+	read DIR_NAME
+	echo "Enter archive name:"
+	read FILE_NAME
+	echo "Choose\n1.Gzip\n2.Bzip2"
+	read -n 1 TYPE
+	if [[ "$TYPE" = "1" ]]
+	then
+		tar -cvzf $FILE_NAME.tar.gz $DIR_NAME
+		echo "Archive was created: $FILE_NAME.tar.gz"
+	fi
+	if [[ "$TYPE" = "2" ]]
+	then
+		tar -cvjf $FILE_NAME.tar.bz2 $DIR_NAME
+		echo "Archive was created: $FILE_NAME.tar.bz2"
+	fi
+fi
+if [[ "$ACTION" = "unzip" ]]
+then
+	echo "Enter archive name:"
+	read ARCH_NAME
+	tar -xvf $ARCH_NAME
+	echo "Archive was unzipped"
+fi
