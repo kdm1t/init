@@ -1,3 +1,2 @@
 #Find the command that kills ssh service
 /etc/init.d/ssh stop
-#systemctl stop ssh
