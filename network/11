@@ -1,3 +1,5 @@
+#Use the output of the previous command to find the name and IP address of the device that makes the link between you (local network) and the outside world
+
 Используя команду traceroute slash16.org мы получаем следующий результат:
 traceroute to slash16.org (13.33.243.106), 64 hops max, 52 byte packets
 1  192.168.20.1 (192.168.20.1)  1.444 ms  1.173 ms  1.264 ms

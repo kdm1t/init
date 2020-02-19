@@ -1,3 +1,5 @@
+#In what file can you find the installed version of your Debian?
+
 Версию установленной системы можно найти в следующих файлах:
 /etc/issue - первый вариант
 /etc/os-release - второй вариант
