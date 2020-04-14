@@ -11,3 +11,4 @@ scripts that can be useful for SysAdmins on a daily basis.
 I'm using MacOS for Network and Debian(Virtual machine) for System and Scripting.
 
 [Wiki](https://github.com/kdm1t/init/wiki/)
+[Result](https://github.com/kdm1t/init/blob/master/result.png)
