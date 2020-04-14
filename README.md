@@ -8,6 +8,6 @@ scripts that can be useful for SysAdmins on a daily basis.
 2. System
 3. Scripting
 
-I'm using MacOS for Network and Debian for System and Scripting.
+I'm using MacOS for Network and Debian(Virtual machine) for System and Scripting.
 
 [Wiki](https://github.com/kdm1t/init/wiki/)
